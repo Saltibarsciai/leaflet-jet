@@ -112,7 +112,7 @@ LatLng.prototype = {
 // Expects an plain object of the form `{lat: Number, lng: Number}` or `{lat: Number, lng: Number, alt: Number}` instead.
 
 export function toLatLng(a, b, c) {
-	if (a instanceof LatLng) {
+	if (a instanceof Object) {
 		return a;
 	}
 	if (Util.isArray(a) && typeof a[0] !== 'object') {
