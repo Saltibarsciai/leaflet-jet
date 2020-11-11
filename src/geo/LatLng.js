@@ -112,6 +112,7 @@ LatLng.prototype = {
 // Expects an plain object of the form `{lat: Number, lng: Number}` or `{lat: Number, lng: Number, alt: Number}` instead.
 
 export function toLatLng(a, b, c) {
+	// temp change
 	if (a instanceof Object) {
 		return a;
 	}
